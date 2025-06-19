@@ -7,24 +7,45 @@
     <style>
         #container{
             width: 50vw;
-            height: 70vh;
+            height: 300vh;
             border: 2px solid black;
             margin: auto;
+        }
+
+        #container > div {
+            width: 400px;
+            border: 1px solid red;
         }
     </style>
 </head>
 <body>
     <div id="container">
-        <div id="static-example" style="width: 400px; position: static">
+        <div id="static-example" style="position: static;">
             <h2>Position: static</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eius quos dolorum quia officia dignissimos mollitia, ex nesciunt eum provident consectetur. Maiores iure eos fugiat molestias delectus omnis, itaque voluptate!
             </p>
         </div>
-        <div 
-            id="relative-example" 
-            style="width: 400px; position: static">
-            <h2>Position: static</h2>
+        <div id="relative-example" style="position: relative; left: 30px; top: -20px; background-color: aqua;">
+            <h2>Position: relative</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eius quos dolorum quia officia dignissimos mollitia, ex nesciunt eum provident consectetur. Maiores iure eos fugiat molestias delectus omnis, itaque voluptate!
+            </p>
+        </div>
+        <div id="absolute-example" style="position: absolute; left: 0px; top: 0px;">
+            <h2>Position: absolute</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eius quos dolorum quia officia dignissimos mollitia, ex nesciunt eum provident consectetur. Maiores iure eos fugiat molestias delectus omnis, itaque voluptate!
+            </p>
+        </div>
+        <div id="fixed-example" style="position: fixed; right: 10px; bottom: 10px;">
+            <h2>Position: fixed</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eius quos dolorum quia officia dignissimos mollitia, ex nesciunt eum provident consectetur. Maiores iure eos fugiat molestias delectus omnis, itaque voluptate!
+            </p>
+        </div>
+        <div id="stiky-example" style="position: sticky; top: 10px">
+            <h2>Position: stiky</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet eius quos dolorum quia officia dignissimos mollitia, ex nesciunt eum provident consectetur. Maiores iure eos fugiat molestias delectus omnis, itaque voluptate!
             </p>
